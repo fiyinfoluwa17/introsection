@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Epilogue' , 'sans serif';
+    /* font-size: 10px; */
+}
+.root{
+    --Almost-White: hsl(0, 0%, 98%);
+--Medium-Gray: hsl(0, 0%, 41%);
+--Almost-Black: hsl(0, 0%, 8%);
+}
+ul{
+    color: var(--Medium-Gray);
+}
+.container-fluid a{
+    font-size: 1rem;
+    width: 10%;
+}
+.container-fluid .navbar-brand{
+    margin-right: 4%;
+    font-size: 2.2rem;
+}
+.logout a.login{
+    text-decoration: none;
+    color: var(--Almost-Black);
+    font-size: 1rem;
+
+}
+.words h1{
+    font-size: 2.1rem;
+    font-weight: 1000;
+    margin-left: 7%;
+    margin-bottom: 3%;
+}
+.words p{
+    font-size: 1rem;
+    color: var(--Medium-Gray);
+    margin-left: 5%;
+    text-align: center;
+    margin-right: 5%;
+}
+.mobile-1{
+    margin-bottom: 10%;
+}
+.mobile-1 :nth-child(2){
+    display: none;
+}
+.learn a{
+    width: 15rem;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20%;
+    margin-top: 6% ;
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 10%;
+    font-weight: 400;
+}
+.footer{
+    margin-bottom: 10%;
+}
+.footer img{
+    width: 100px;
+    height: 30px;
+}
+@media (min-width: 430px){
+    .mobile-1 :nth-child(2){
+        display: block;
+    }
+    .mobile-1 :nth-child(1){
+        display: none;
+    }
+    .body{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-left: 5%;
+    }
+    .words h1{
+        font-size: 5rem;
+        font-weight: 2000;
+        text-align: left;
+        margin-left: 0%;
+    }
+    .content{
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    section img{
+        width: 150px !important;
+        height: 40px;
+    }
+    section{
+        margin: none;
+        margin-right: 5%;
+    }
+    section .words p{
+        text-align: left;
+        margin-right: 20% ;
+        margin-left: 0%;
+    }
+    section .learn a{
+        margin-left: 0%;
+    }
+    .container-fluid{
+        margin: 0 5%;
+    }
+}
